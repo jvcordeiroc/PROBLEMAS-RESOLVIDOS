@@ -1,0 +1,30 @@
+Algoritmo "PROBLEMA BASKHARA"
+
+Var
+
+   coefA, coefB, coefC, x1, x2, delta : real
+
+
+Inicio
+
+      escreva("Coefiente A: ")
+      leia(coefA)
+      escreva("Coefiente b: ")
+      leia(coefB)
+      escreva("Coefiente C: ")
+      leia(coefC)
+      
+      
+      delta <- (coefB^2) - 4 * coefA * coefC
+      
+      se (coefA = 0) ou (delta < 0) entao
+         escreva("ESTA EQUAÇÃO NÃO POSSUI RAÍZES REAIS")
+      senao
+           x1 <- (-coefB + raizQ(delta)) / (2 * coefA)
+           x2 <- (-coefB - raizQ(delta)) / (2 * coefA)
+           escreval("X1: ", x1:6:4)
+           escreva("X2: ", x2:6:4)
+      fimse
+
+
+Fimalgoritmo
