@@ -1,0 +1,23 @@
+Algoritmo "PROBLEMA OPERADORA"
+
+Var
+
+   minutos, MinutosExtras, ValorTotal : real
+
+
+Inicio
+
+      escreva("Digite a Quantidade de Minutos: ")
+      leia(minutos)
+      
+      se minutos > 100 entao
+         MinutosExtras <- minutos - 100
+         ValorTotal <- 50 + (MinutosExtras * 2)
+      senao
+           ValorTotal <- 50
+      fimse
+      
+      escreva("Valor a Pagar: R$ ", ValorTotal:4 x:2)
+
+
+Fimalgoritmo
